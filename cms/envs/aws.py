@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 This is the default template for our main set of AWS servers.
 """
@@ -505,3 +506,19 @@ HELP_TOKENS_BOOKS = ENV_TOKENS.get('HELP_TOKENS_BOOKS', HELP_TOKENS_BOOKS)
 
 ############## Settings for CourseGraph ############################
 COURSEGRAPH_JOB_QUEUE = ENV_TOKENS.get('COURSEGRAPH_JOB_QUEUE', LOW_PRIORITY_QUEUE)
+
+
+
+
+PAID_COURSE_REGISTRATION_CURRENCY = ENV_TOKENS.get('PAID_COURSE_REGISTRATION_CURRENCY', PAID_COURSE_REGISTRATION_CURRENCY)
+
+CURRENCIES = (
+    ('tzs', 'TSh'),
+    ('kes', 'KSh'),
+    ('zmk', 'K'),
+    ('etb', 'Br'),
+    ('eur', '€'),
+    ('usd', '$'),
+    ('lsl', 'L'),
+    ('gbp', '£'),
+)
